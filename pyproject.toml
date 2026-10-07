@@ -1,0 +1,21 @@
+[project]
+name = "deriv"
+version = "0.1.0"
+description = "Support ticket pipeline: intent classification, KB retrieval and grounded reply drafts"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastembed>=0.8.1",
+    "groq>=1.7.0",
+    "numpy>=2.5.3",
+    "pydantic>=2.13.5",
+    "python-dotenv>=1.2.4",
+    "rank-bm25>=0.2.2",
+    "typesafe-sdk>=0.7.2",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

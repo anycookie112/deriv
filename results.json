@@ -1,0 +1,73 @@
+[
+  {
+    "ticket_id": "T1",
+    "intent": "deposit_issue",
+    "retrieved_articles": [
+      "A1"
+    ],
+    "reply_draft": "Hi, card deposits are usually instant but can be delayed by issuer checks, network issues, or a review. Please confirm that the payment went through on your card, check your transaction history in the app, and allow the processing window to pass before we look into it further.",
+    "grounded": true,
+    "confidence": 0.97,
+    "needs_human_escalation": true,
+    "safety_flags": [
+      "low_confidence"
+    ]
+  },
+  {
+    "ticket_id": "T2",
+    "intent": "password_reset",
+    "retrieved_articles": [
+      "A2"
+    ],
+    "reply_draft": "Hi, please confirm you’re using the email address registered to your account, check your spam or junk folder, wait a few minutes, and then try the password‑reset link again. If you’ve made several attempts, you may have hit a temporary rate limit, so waiting briefly before retrying can help.",
+    "grounded": true,
+    "confidence": 0.98,
+    "needs_human_escalation": true,
+    "safety_flags": [
+      "low_confidence"
+    ]
+  },
+  {
+    "ticket_id": "T3",
+    "intent": "withdrawal_issue",
+    "retrieved_articles": [
+      "A3"
+    ],
+    "reply_draft": "Withdrawals can be declined for several reasons, such as incomplete verification, mismatched payment‑method details, a compliance review, or account restrictions.",
+    "grounded": true,
+    "confidence": 0.98,
+    "needs_human_escalation": true,
+    "safety_flags": [
+      "account_specific_request",
+      "policy_sensitive"
+    ]
+  },
+  {
+    "ticket_id": "T4",
+    "intent": "trading_advice_request",
+    "retrieved_articles": [
+      "A5"
+    ],
+    "reply_draft": "I’m sorry, but I can’t provide specific asset predictions or trading advice. Please refer to our educational resources for general information on investing.",
+    "grounded": true,
+    "confidence": 0.97,
+    "needs_human_escalation": false,
+    "safety_flags": [
+      "advice_request"
+    ]
+  },
+  {
+    "ticket_id": "T5",
+    "intent": "account_lock",
+    "retrieved_articles": [
+      "A4"
+    ],
+    "reply_draft": "Your account is temporarily locked due to multiple failed sign‑in attempts. Please wait for the cooldown period, or you can start the secure recovery flow to regain access. If you need further assistance, let us know.",
+    "grounded": true,
+    "confidence": 0.98,
+    "needs_human_escalation": true,
+    "safety_flags": [
+      "low_confidence"
+    ]
+  }
+]
